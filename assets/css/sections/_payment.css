@@ -1,0 +1,11 @@
+/*==========================================
+    payment
+==========================================*/
+.payment {
+  padding: 120px 0 90px; }
+  .payment .single-payment {
+    margin-bottom: 30px; }
+    .payment .single-payment img {
+      width: 100%;
+      padding: 30px;
+      border: 1px solid rgba(0, 0, 80, 0.2); }

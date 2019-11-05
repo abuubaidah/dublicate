@@ -1,0 +1,17 @@
+/*==========================================
+    footer
+==========================================*/
+.footer {
+    background: #007bff;
+    // background: black;
+    p {
+        color: $white;
+        margin: 0;
+        font-weight: 300;
+        padding: 30px 0;
+        text-align: center;
+        a {
+            color: $white;
+        }
+    }
+}

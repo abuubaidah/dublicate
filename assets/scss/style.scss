@@ -1,0 +1,39 @@
+/* =================================
+ css index
+ =================================
+ *. typography
+ *. section title
+ *. preloader
+ *. normalize
+ 1. header
+ 2. banner
+ 3. info-feature
+ 4. litehyip features
+ 5. we thinking global
+ 6. inventors
+ 7. testimonial
+ 8. newsletter
+ 9. page title
+ 10. footer
+ 11. about
+ 12. investmenut-plan
+ 13. faq
+ 14. contact */
+
+
+@import "main/_variables";
+@import "main/_mixins";
+@import "main/_global";
+@import "main/_normalize";
+
+//=Section scss
+@import "sections/_header";
+@import "sections/_banner";
+@import "sections/_statics";
+@import "sections/_pages";
+@import "sections/_features";
+@import "sections/_suggested-web";
+@import "sections/_footer";
+
+//=Pages scss
+// @import "pages/_about";

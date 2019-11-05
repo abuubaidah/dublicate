@@ -1,0 +1,26 @@
+/*==========================================
+    suggested web
+==========================================*/
+.suggested-web {
+    padding: 120px 0;
+    display: none;
+    .single-web {
+        border: 1px solid rgba(2, 29, 83, 0.09);
+        padding: 15px;
+        a {
+            text-align: center;
+            display: block;
+            img {
+                margin-bottom: 25px;
+                box-shadow: 0 7px 40px -5px rgba(0, 0, 0, 0.16);
+            }
+            span.web-name {
+                display: inline-block;
+                font-size: 20px;
+                font-weight: 700;
+                color: #021d53;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+/*==========================================
+    pages
+==========================================*/
+.pages {
+  padding: 120px 0; }
+  .pages .single-pages .part-img {
+    height: 200px;
+    overflow: hidden; }
+    .pages .single-pages .part-img img {
+      width: 100%; }

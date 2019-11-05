@@ -1,0 +1,114 @@
+/*==========================================
+    pages
+==========================================*/
+.pages {
+    padding: 120px 0 71px;
+    .container {
+        max-width: 1300px;
+    }
+    .col-xl-4 {
+        .single-pages {
+            .part-img {
+                height: 390px;
+            }
+        }
+    }
+    .single-pages {
+        margin-bottom: 46px;
+        &.spec-home {
+            .part-img {
+                height: 400px;
+            }
+        }
+        &.whmcs {
+            position: relative;
+            .part-img {
+                border: 5px solid #78c04a;
+                padding: 5px;
+            }
+            // background: url('../img/whmcs.png') center center no-repeat;
+            // background-size: 100%;
+            &:after {
+                position: absolute;
+                background: url(../img/whmcs.png) center center no-repeat;
+                width: 250px;
+                content: '';
+                background-size: 80%;
+                height: 90px;
+                // display: inline-block;
+                z-index: 55;
+                left: 0;
+                margin-left: -80px;
+                transform: rotate(-35deg);
+                margin-top: -20px;
+                top: 0;
+                border-radius: 50%;
+                border: 5px solid #78c04a;
+                // background: red;
+                background-color: $white;
+            }
+        }
+        &:hover {
+            .part-img {
+                .part-hover {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
+        .part-img {
+            // border: 5px solid rgba(85, 138, 242, 0.7);
+            height: 350px;
+            overflow: hidden;
+            box-shadow: 0 7px 40px -5px rgba(0, 0, 0, 0.26);
+            position: relative;
+            // border: 6px solid rgba(47, 157, 248, 0.541);
+            img {
+                width: 100%;
+            }
+            .part-hover {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.8);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                visibility: hidden;
+                opacity: 0;
+                @include transition($transition);
+                .view {
+                    a {
+                        display: inline-block;
+                        color: #007bff;
+                        width: 50px;
+                        height: 50px;
+                        border: 1px solid $white;
+                        text-align: center;
+                        line-height: 50px;
+                        border-radius: 50%;
+                        background: $white;
+                    }
+                }
+            }
+        }
+        .part-text {
+            text-align: center;
+            h3 {
+                font-size: 20px;
+                font-weight: 700;
+                margin-top: 25px;
+                margin-bottom: 13px;
+                // text-transform: uppercase;
+            }
+            span.subtitle {
+                font-size: 16px;
+                font-weight: 500;
+                // text-transform: uppercase;
+            }
+        }
+    }
+}

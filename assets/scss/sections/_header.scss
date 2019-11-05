@@ -1,0 +1,39 @@
+/*==========================================
+    header
+==========================================*/
+.header {
+    position: absolute;
+    width: 100%;
+    z-index: 55;
+    background: $white;
+    box-shadow: 0 7px 27px -9px rgba(58, 58, 58, 0.20);
+    display: none;
+    .logo {
+        height: 40px;
+        img {
+            height: 100%;
+        }
+    }
+    .buy-button {
+        padding: 25px 0;
+        text-align: right;
+        a {
+            display: inline-block;
+            height: 50px;
+            width: 160px;
+            background: #b10845;
+            color: $white;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 50px;
+            font-weight: 600;
+            border-radius: 50px;
+            box-shadow: 0px 2px 6px 0px #b10845;
+            @include transition($transition);
+            &:hover {
+                background: transparent;
+                color: #b10845;
+            }
+        }
+    }
+}
