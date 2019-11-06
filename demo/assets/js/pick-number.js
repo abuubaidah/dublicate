@@ -1,4 +1,6 @@
 (function ($) {
+    "use strict";
+
     initLottos()
     $(document).on('click', '.quick-play', function (e) {
         e.preventDefault()
