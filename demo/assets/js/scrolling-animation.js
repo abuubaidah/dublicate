@@ -8,8 +8,6 @@
         var containerOffset = $section.offset().top - window.innerHeight;
         if (scrollOffset > containerOffset) {
             $('.lottery-ticket').addClass('active');
-            // unbind event not to load scrolsl again
-            $(document).unbind('scroll');
         }
     });
 

@@ -4,7 +4,7 @@
 .footer {
     padding: 120px 0 108px;
     background: url('../img/footer-bg.jpg') center center no-repeat;
-    background: -webkit-linear-gradient(-94deg, #0ca7d2 0%, #005cea 100%);
+    background: -webkit-linear-gradient(-94deg, #2468fa 0%, #005cea 100%);
     background-size: cover;
     // margin-top: 100px;
     .footer-widget {
@@ -122,7 +122,7 @@
 ==========================================*/
 .copyright {
     background: url('../img/footer-bg.jpg') center center no-repeat;
-    background: $gradient;
+    background: -webkit-linear-gradient(86deg, #1d1f23 0%, #323638 100%);
     background-size: cover;
     p {
         font-size: 18px;

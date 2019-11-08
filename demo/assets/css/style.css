@@ -16,8 +16,48 @@
 
  =================================
 
- 1.
+ 1. header
  2. banner
+ 3. brand
+ 4. jackpot 
+ 5. lottery ticket
+ 6. lottery result
+ 7. choosing reason
+ 8. buying ticket
+ 9. how to work
+ 10. team
+ 11. statics
+ 12. testimonial
+ 13. affiliate
+ 14. mobile navbar
+ 15. footer
+
+ ============
+ inner pages
+ ============
+
+ 16. breadcrumb
+ 17. lottery details
+ 18. quick review
+ 19. contact
+ 20. faq
+ 21. blog details
+ 22. sidebar
+ 23. team
+ 24. blog
+ 25. about
+ 26. forms
+ 27. erroe
+
+============
+ user panel
+============
+
+28. player statics
+29. payment history
+30. player profile
+
+
 
 ================================= */
 /*==========================================
@@ -3307,7 +3347,7 @@ ul {
 .footer {
   padding: 120px 0 108px;
   background: url("../img/footer-bg.jpg") center center no-repeat;
-  background: -webkit-linear-gradient(-94deg, #0ca7d2 0%, #005cea 100%);
+  background: -webkit-linear-gradient(-94deg, #2468fa 0%, #005cea 100%);
   background-size: cover; }
   .footer .footer-widget .about-area a {
     display: inline-block;
@@ -3396,7 +3436,7 @@ ul {
 ==========================================*/
 .copyright {
   background: url("../img/footer-bg.jpg") center center no-repeat;
-  background: -webkit-linear-gradient(86deg, #005cea 0%, #00c5fb 100%);
+  background: -webkit-linear-gradient(86deg, #1d1f23 0%, #323638 100%);
   background-size: cover; }
   .copyright p {
     font-size: 18px;

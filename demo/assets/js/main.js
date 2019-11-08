@@ -4,7 +4,6 @@
     $(document).ready(function(){
         // dropdown menu scroll
         var x = $('.dropdown-item');
-        var y = $('.dropdown-menu').find(x).length;
         $('.dropdown-menu').each(function(){
             var v = $(this).find(x).length;
             if(v <= 6) {
@@ -35,7 +34,7 @@
         });
 
         // megamenu fixing for lottery 
-        $('.for-lottery-btn').mouseover(function(){
+        $('.for-lottery-btn').on('mouseover', function(){
             $('.for-lottery').css("position", "initial");
             if ($(window).width() < 960) {
                 $('.for-lottery').css("position", "relative");
@@ -52,7 +51,7 @@
 
         // count down
         var nodes = $('.timer');
-        $.each(nodes, function (index, value) {
+        $.each(nodes, function (_index, value) {
             var date = $(this).data('date');
 
             setInterval(() => {
@@ -321,92 +320,80 @@
         });
 
         // testimonial 2 slider
-            var testimonialSlider2 = $('.testimonial-slider2');
-            testimonialSlider2.owlCarousel({
-                loop: true,
-                margin: 60,
-                nav: false,
-                smartSpeed: 1000,
-                animateOut: 'fadeOut',
-                animateIn: 'fadeIn',
-                autoplay: true,
-                navText: ["<i class='fas fa-long-arrow-alt-left'></i>", "<i class='fas fa-long-arrow-alt-right'></i>"],
-                thumbs: true,
-                thumbsPrerendered: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    320: {
-                        items: 1
-                    },
-                    576: {
-                        items: 1
-                    },
-                    768: {
-                        items: 1
-                    },
-                    992: {
-                        items: 1
-                    },
-                    1200: {
-                        items: 1
-                    },
-                    1920: {
-                        items: 1
-                    }
+        var testimonialSlider2 = $('.testimonial-slider2');
+        testimonialSlider2.owlCarousel({
+            loop: true,
+            margin: 60,
+            nav: false,
+            smartSpeed: 1000,
+            animateOut: 'fadeOut',
+            animateIn: 'fadeIn',
+            autoplay: true,
+            navText: ["<i class='fas fa-long-arrow-alt-left'></i>", "<i class='fas fa-long-arrow-alt-right'></i>"],
+            thumbs: true,
+            thumbsPrerendered: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                320: {
+                    items: 1
+                },
+                576: {
+                    items: 1
+                },
+                768: {
+                    items: 1
+                },
+                992: {
+                    items: 1
+                },
+                1200: {
+                    items: 1
+                },
+                1920: {
+                    items: 1
                 }
-            });
-            $('.owl-next').on('click', function() {
-                testimonialSlider2.trigger('next.owl.carousel');
-            })
-            // Go to the previous item
-            $('.owl-prev').on('click', function() {
-                testimonialSlider2.trigger('prev.owl.carousel', [300]);
-            })
+            }
+        });
+        $('.owl-next').on('click', function() {
+            testimonialSlider2.trigger('next.owl.carousel');
+        })
+        $('.owl-prev').on('click', function() {
+            testimonialSlider2.trigger('prev.owl.carousel', [300]);
+        })
     });
     
+    /* initilization preloader & setInterval */
     $(window).on('load',function(){
         var preLoder = $(".preloader");
         preLoder.fadeOut(1000);
 
-        // initilization preloader & setInterval
         setInterval(function(){ 
             $(".banner .part-img").addClass("active")
         }, 1000);
        
     });
-    
+
+    /* logo changing for index-2 & navbar fixed */
     $(window).on("scroll", function(){
-        // logo changed whent menu will be fixed
         var fixed_top = $(".header");
         var topbar = $('.topbar');
-        //-----------------------------------
         if( $(window).scrollTop() > 100){  
             fixed_top.addClass("animated fadeInDown fixed-header");
             topbar.hide();
+            $("#logo-2").attr("src", "assets/img/logo.png");
             if ($(window).width() < 960) {
                 $('.header').removeClass('fixed-header');
+                $("#logo-2").attr("src", "assets/img/logo-2.png");
             }
         }
         else{
             fixed_top.removeClass("animated fadeInDown fixed-header");
             topbar.show();
-            if ($(window).width() < 960) {
-                topbar.hide();
-            }
-        }
-
-        // fixed menu
-        if( $(window).scrollTop() > 100){  
-            $("#logo-2").attr("src", "assets/img/logo.png");
-            if ($(window).width() < 960) {
-                $("#logo-2").attr("src", "assets/img/logo-2.png");
-            }
-        }
-        else{
             $("#logo-2").attr("src", "assets/img/logo-2.png");
             if ($(window).width() < 960) {
+                topbar.hide();
                 $("#logo-2").attr("src", "assets/img/logo-2.png");
             }
         }

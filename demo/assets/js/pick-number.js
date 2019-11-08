@@ -2,14 +2,14 @@
     "use strict";
 
     initLottos()
-    $(document).on('click', '.quick-play', function (e) {
+    $('.quick-play').on('click', function (e) {
         e.preventDefault()
         var lottoButtons = document.querySelectorAll('.seed-btn');
         lottoButtons.forEach(lottoButton => {
             $(lottoButton).trigger('click')
         })
     })
-    $(document).on('click', '.btn-clear', function (e) {
+    $('.btn-clear').on('click', function (e) {
         e.preventDefault()
         var index = $(this).siblings('.seed-btn').data('lotto')
         window._lotto[index] = {
@@ -18,7 +18,7 @@
         }
         adjust()
     })
-    $(document).on('click', '.pic-num.main [data-value]', function (e) {
+    $('.pic-num.main [data-value]').on('click', function (e) {
         e.preventDefault()
         var seed = $(this).parent().parent().siblings('.coupon-head').find('.seed-btn');
         var index = seed.data('lotto');
@@ -32,7 +32,7 @@
         }
         adjust()
     })
-    $(document).on('click', '.pic-num.bonus [data-value]', function (e) {
+    $('.pic-num.bonus [data-value]').on('click', function (e) {
         e.preventDefault()
         var seed = $(this).parent().parent().siblings('.coupon-head').find('.seed-btn');
         var index = seed.data('lotto');
@@ -46,7 +46,7 @@
         }
         adjust()
     })
-    $(document).on('click', '.seed-btn', function (e) {
+    $('.seed-btn').on('click', function (e) {
         e.preventDefault()
         var index = $(this).data('lotto');
         var commons = Array.from({length: 54}, (x, i) => i + 1);
